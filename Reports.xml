@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Report Suite" parallel="false">
+	<test name="Report Test TC001">
+		<classes>
+			<class name="TC001.TC001"/>
+ 		</classes>
+	</test>
+	<test name="Report Test TC002">
+		<classes>
+			<class name="TC002.TC002"/>
+		</classes>
+	</test>
+	<test name="Report Test TC003">
+		<classes>
+			<class name="TC003.TC003"/>
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="6" total="22" passed="16">
+  <reporter-output>
+    <line>
+      <![CDATA[USD $19.00 não encontrado na página]]>
+    </line>
+    <line>
+      <![CDATA[USD $209.00 não encontrado na página]]>
+    </line>
+  </reporter-output>
+  <suite name="Report Suite" duration-ms="107930" started-at="2018-10-07T23:36:36Z" finished-at="2018-10-07T23:38:24Z">
+    <groups>
+    </groups>
+    <test name="Report Test TC001" duration-ms="30751" started-at="2018-10-07T23:36:36Z" finished-at="2018-10-07T23:37:07Z">
+      <class name="TC001.TC001">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TC001.TC001@523884b2]" name="beforeClass" is-config="true" duration-ms="23203" started-at="2018-10-07T20:36:36Z" finished-at="2018-10-07T20:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String)[pri:0, instance:TC001.TC001@523884b2]" name="f" duration-ms="6862" started-at="2018-10-07T20:36:59Z" data-provider="userLogin" finished-at="2018-10-07T20:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demouser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TC001.TC001@523884b2]" name="afterClass" is-config="true" duration-ms="669" started-at="2018-10-07T20:37:06Z" finished-at="2018-10-07T20:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TC001.TC001 -->
+    </test> <!-- Report Test TC001 -->
+    <test name="Report Test TC002" duration-ms="43806" started-at="2018-10-07T23:37:07Z" finished-at="2018-10-07T23:37:50Z">
+      <class name="TC002.TC002">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TC002.TC002@77cd7a0]" name="beforeClass" is-config="true" duration-ms="18237" started-at="2018-10-07T20:37:07Z" finished-at="2018-10-07T20:37:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="f(java.lang.String, java.lang.String)[pri:0, instance:TC002.TC002@77cd7a0]" name="f" duration-ms="5734" started-at="2018-10-07T20:37:25Z" data-provider="userLogin" finished-at="2018-10-07T20:37:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demouser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC002 - Mensagem incorreta sendo  expected [Wrong Username or Password] but found [Wrong username or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC002 - Mensagem incorreta sendo  expected [Wrong Username or Password] but found [Wrong username or password.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at TC002.TC002.f(TC002.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="FAIL" signature="f(java.lang.String, java.lang.String)[pri:0, instance:TC002.TC002@77cd7a0]" name="f" duration-ms="5358" started-at="2018-10-07T20:37:31Z" data-provider="userLogin" finished-at="2018-10-07T20:37:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demouser_]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xyz]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC002 - Mensagem incorreta sendo  expected [Wrong Username or Password] but found [Wrong username or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC002 - Mensagem incorreta sendo  expected [Wrong Username or Password] but found [Wrong username or password.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at TC002.TC002.f(TC002.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="FAIL" signature="f(java.lang.String, java.lang.String)[pri:0, instance:TC002.TC002@77cd7a0]" name="f" duration-ms="5388" started-at="2018-10-07T20:37:36Z" data-provider="userLogin" finished-at="2018-10-07T20:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demouser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nananana]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC002 - Mensagem incorreta sendo  expected [Wrong Username or Password] but found [Wrong username or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC002 - Mensagem incorreta sendo  expected [Wrong Username or Password] but found [Wrong username or password.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at TC002.TC002.f(TC002.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="FAIL" signature="f(java.lang.String, java.lang.String)[pri:0, instance:TC002.TC002@77cd7a0]" name="f" duration-ms="8340" started-at="2018-10-07T20:37:41Z" data-provider="userLogin" finished-at="2018-10-07T20:37:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demouser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC002 - Mensagem incorreta sendo  expected [Wrong Username or Password] but found [Wrong username or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC002 - Mensagem incorreta sendo  expected [Wrong Username or Password] but found [Wrong username or password.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at TC002.TC002.f(TC002.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TC002.TC002@77cd7a0]" name="afterClass" is-config="true" duration-ms="739" started-at="2018-10-07T20:37:50Z" finished-at="2018-10-07T20:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TC002.TC002 -->
+    </test> <!-- Report Test TC002 -->
+    <test name="Report Test TC003" duration-ms="33319" started-at="2018-10-07T23:37:50Z" finished-at="2018-10-07T23:38:24Z">
+      <class name="TC003.TC003">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TC003.TC003@f6c48ac]" name="beforeClass" is-config="true" duration-ms="28718" started-at="2018-10-07T20:37:50Z" finished-at="2018-10-07T20:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="click()[pri:0, instance:TC003.TC003@f6c48ac]" name="click" duration-ms="3787" started-at="2018-10-07T20:38:19Z" finished-at="2018-10-07T20:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="9" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rendezvous Hotel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="6" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14/01/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="6" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15/01/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="8" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="6" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0875]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="7" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[JOHNY SMITH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="8" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[R2, AVENUE DU MAROC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="6" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="8" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Superior Double]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="7" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14/01/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="6" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15/01/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="7" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="6" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$150]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="6" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USD $20.90]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="FAIL" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="9" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USD $19.00]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at func.Campos.validarCampos(Campos.java:40)
+	at TC003.TC003.f(TC003.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[USD $19.00 não encontrado na página]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="FAIL" signature="f(java.lang.String)[pri:0, instance:TC003.TC003@f6c48ac]" name="f" duration-ms="12" started-at="2018-10-07T20:38:23Z" data-provider="valores" finished-at="2018-10-07T20:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USD $209.00]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at func.Campos.validarCampos(Campos.java:40)
+	at TC003.TC003.f(TC003.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[USD $209.00 não encontrado na página]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TC003.TC003@f6c48ac]" name="afterClass" is-config="true" duration-ms="673" started-at="2018-10-07T20:38:23Z" finished-at="2018-10-07T20:38:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TC003.TC003 -->
+    </test> <!-- Report Test TC003 -->
+  </suite> <!-- Report Suite -->
+</testng-results>

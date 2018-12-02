@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Report Suite]">
+  <test name="Report Test TC002(failed)">
+    <classes>
+      <class name="TC002.TC002">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="f" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- TC002.TC002 -->
+      <class name="TC001.TC001">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- TC001.TC001 -->
+      <class name="TC003.TC003">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- TC003.TC003 -->
+    </classes>
+  </test> <!-- Report Test TC002(failed) -->
+  <test name="Report Test TC003(failed)">
+    <classes>
+      <class name="TC002.TC002">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TC002.TC002 -->
+      <class name="TC003.TC003">
+        <methods>
+          <include name="f" invocation-numbers="14 15"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- TC003.TC003 -->
+      <class name="TC001.TC001">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- TC001.TC001 -->
+    </classes>
+  </test> <!-- Report Test TC003(failed) -->
+</suite> <!-- Failed suite [Report Suite] -->

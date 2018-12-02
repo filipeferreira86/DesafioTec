@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+	<suite-files>
+	    <suite-file path="./suite1.xml" />
+	    <suite-file path="./suite2.xml" />
+	</suite-files>
+  <test name="TC001">
+    <classes>
+      <class name="TC001.TC001"/>
+    </classes>
+  </test>
+  <test name="TC002">
+  	<classes>
+  		<class name="TC002.TC002"/>
+  	</classes>
+  </test>
+</suite> 
